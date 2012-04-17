@@ -17,27 +17,31 @@
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="modernizr.custom.min.js"></script>
 	<link rel="stylesheet" href="css/form.css" />
-	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-	<script src="js/modernizr.custom.min.js"></script>
 
 </head>
 	<body>
 		<!-- my footer div -->
 		<div data-role="header">
-		
+			<a href="index.html" data-role="button" data-theme="c">Home</a>
 			<p align="center"<h1>Search for Bands!</h1></p>
 		</div><!--Search for bands header div-->
-		<div>
-			<label for="search-basic" align="center">Search Here!</label>
-			<input type="search" name="search" id="search-basic" value=""/>
-		</div><!--Basic search input bar -->	
-		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-filter-palceholder="Search by Genre">
+				<li><a href="#"><img src='pics/classical.png'/>Classical</a></li>
+				<li><a href="#"><img src='pics/country.png'/>Country</a></li>
+				<li><a href="#"><img src='pics/jazz.png'/>Jazz</a></li>
+				<li><a href="#"><img src='pics/kids.png'/>Kids</a></li>
+				<li><a href="#"><img src='pics/metal.png'/>Metal</a></li>
+				<li><a href="#"><img src='pics/other.png'/>Other</a></li>
+				<li><a href="#"><img src='pics/rap.png'/>Rap</a></li>
+				<li><a href="#"><img src='pics/rock.png'/>Rock</a></li>
+			</ul>
+		</div>
 		<div data-role="footer" data-position="fixed" data-theme="a">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="index.html" data-icon="home">Home</a></li>
 					<li><a href="additem.html" data-ajax="false" data-icon="plus">Create</a></li>
-					<li><a href="localBands.html" data-icon="search">Local</a></li>
+					<li><a href="localBands.html" data-ajax="false" data-icon="search">Local</a></li>
 					<li><a href="bookies.html" data-icon="gear">Bookies</a></li>
 				</ul>	
 			</div><!--navbar-->
@@ -47,6 +51,5 @@
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
-	
+	<script type="text/javascript" src="js/json.js"></script>	
 </html>	
