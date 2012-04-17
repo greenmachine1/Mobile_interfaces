@@ -15,12 +15,13 @@
 	<link rel="stylesheet" href="css/form.css" />
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/modernizr.custom.min.js"></script>
+	
 </head>
 	<!-- body -->
 	<body>
 		<!--Header Tags -->
 		<h1>Create a gig!</h1>
-		<a href="index.html" id="home">Go back home</a>
+		<a href="index.html" rel="external" id="home">Go back home</a>
 
 		<!-- form action used to submit to either local or server storage-->
 		<!-- method sends data behind the scenes or through the URL, post is secure-->
@@ -89,6 +90,16 @@
 			</ul>			
 		</nav>
 	</form>	
+	<div data-role="footer" data-position="fixed" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" rel="external" data-icon="plus">Create</a></li>
+					<li><a href="localBands.html" rel="external" data-icon="search">Local</a></li>
+					<li><a href="bookies.html" rel="external" data-icon="gear">Bookies</a></li>
+					<li><a href="news.html" rel="external" data-icon="gear">Feed</a></li>
+				</ul>	
+			</div><!--navbar-->
+		</div><!--footer-->
 	
 	
 	<!-- linking my .js file with my main html -->
