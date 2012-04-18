@@ -28,6 +28,7 @@
 		<div data-role="content" data-theme="a">
 			<form action="" method="post" id="bandInfo">
 				<div data-role="fieldcontain" data-theme="b">
+					<!--user info -->
 					<label for="fname">Your Name Please:</label>
 					<input type="text" name="fname" id="fname" data-theme="b"/>
 				
@@ -38,13 +39,28 @@
 					<input type="text" name="email" id="email" data-theme="b"/>
 				</div>				
 				<div data-role="fieldcontain" data-theme="b">
-	
+				
 					<!-- input slider for how many tickets you would need for your show-->
 					<label for="tickets">How many tickets will you need? (1 to 50):</label>
-					<input type="range" value="0" min="1" max="50" name="tickets" id="tickets"/>
+					<input type="range" value="0" min="0" max="50" name="tickets" id="tickets"/>
 				</div>	
+				
+				<div data-role="fieldcontain">
+					<input type="reset" value="Reset" id="reset" data-theme="c" />
+					<input type="submit" value="Submit" id="submit" data-theme="c" />
+					<input type="submit" value="Submit" id="submit" data-theme="c" />
+					<input type="dispInfo" value="Display Info" id="dispInfo" data-theme="c"/>
+					<!--<a href='#' id='submit'>Submit Data</a>-->
+					<!--<a href='#' id="reset">Reset Data</a>-->
+					<!--<a href='#' id='dispInfo'>Display Data</a>-->
+				</div>	
+				<div>	
+					<a href="index.html" id="home">Go back home</a>
+					<a href="index.html" id="addNew" style="display:none";">Add new Item</a>
+				</div>
 			</form>
 		</div>		
+		
 			<div data-role="footer" data-position="fixed" data-theme="a">
 					<div data-role="navbar">
 						<ul>
@@ -55,8 +71,7 @@
 						</ul>	
 					</div><!--navbar-->
 			</div><!--footer-->
-		
-	
+			
 	<!-- linking my .js files with my main html -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
