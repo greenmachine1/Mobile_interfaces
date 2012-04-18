@@ -36,68 +36,28 @@
 				
 					<label for="email">Your Email Please:</label>
 					<input type="text" name="email" id="email" data-theme="b"/>
-				</div>
-				
+				</div>				
 				<div data-role="fieldcontain" data-theme="b">
-				
-				<!--<fieldset>-->
-				<!--<legend>About your band</legend> -->
-				<ul id="item">			
-					<li id="select"><label for="groups">Information about your band</label></li>
-					<li>
-					<!-- used to enter in a date requested to play-->
-						<label for="startdate">Please enter the date you would like to play: </label>	
-						<input type="date" min="2012-02-31" max="2012-12-31" id="startdate" name="startdate"
-						required area-required="true" placeholder="2012-05-18"/>
-					
-						<!-- adding check boxes for members in the band-->
-						<li>Instruments in the band</li>
-							<ul>
-								<li><input type="checkbox" checked value="yes" id="guitar1" /><label for="guitar">1 Guitar</label></li>
-								<li><input type="checkbox" value="yes" id="guitar2" /><label for="guitar2">2 Guitar</label></li>
-								<li><input type="checkbox" value="yes" id="bass" /><label for="bass">Bass</label></li>
-								<li><input type="checkbox" value="yes" id="drums" /><label for="drums">Drums</label></li>
-								<li><input type="checkbox" value="yes" id="vocalMain" /><label for="vocalMain">Main Vocals</label></li>
-								<li><input type="checkbox" value="yes" id="backupVocals1" /><label for="backupVocals1">1 Backup Vocals</label></li>
-								<li><input type="checkbox" value="yes" id="backupVocals2" /><label for="backupVocals2">2 Backup Vocals</label></li>
-								<li><input type="checkbox" value="yes" id="backupVocals3" /><label for="backupVocals3">3 backup Vocals</label></li>
-								<li><input type="checkbox" value="yes" id="other" /><label for="other">Other</label></li>
-							</ul>
-							
-						<!-- text area used as an input to tell us what other instruments are involved-->
-						<li>If you answered other, please tell us what other instruments are involved</li>
-							<label for="other1"></label><textarea id="other1"/></textarea>
-						<li><input type="hidden" value="true" id="otherInfo"/></li>
-						<!-- input slider for how many tickets you would need for your show-->
-						<li>
-							<label for="tickets">How many tickets will you need? (1 to 50):</label>
-							<input type="range" min="1" max="50" name="tickets" id="tickets"/>
-						
-							
-					</li>	
-				</ul><!--Unordered list closer-->
-			<!--</fieldset>-->	<!--fieldset closer-->
-			
-				</div>
-				
-			</form>					
-		
-		</div>
-		
-
-	<div data-role="footer" data-position="fixed" data-theme="a">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="additem.html" rel="external" data-icon="plus">Create</a></li>
-					<li><a href="localBands.html" rel="external" data-icon="search">Local</a></li>
-					<li><a href="bookies.html" rel="external" data-icon="gear">Bookies</a></li>
-					<li><a href="news.html" rel="external" data-icon="gear">Feed</a></li>
-				</ul>	
-			</div><!--navbar-->
-		</div><!--footer-->
 	
+					<!-- input slider for how many tickets you would need for your show-->
+					<label for="tickets">How many tickets will you need? (1 to 50):</label>
+					<input type="range" value="0" min="1" max="50" name="tickets" id="tickets"/>
+				</div>	
+			</form>
+		</div>		
+			<div data-role="footer" data-position="fixed" data-theme="a">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="additem.html" rel="external" data-icon="plus">Create</a></li>
+							<li><a href="localBands.html" rel="external" data-icon="search">Local</a></li>
+							<li><a href="bookies.html" rel="external" data-icon="gear">Bookies</a></li>
+							<li><a href="news.html" rel="external" data-icon="gear">Feed</a></li>
+						</ul>	
+					</div><!--navbar-->
+			</div><!--footer-->
+		
 	
-	<!-- linking my .js file with my main html -->
+	<!-- linking my .js files with my main html -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
