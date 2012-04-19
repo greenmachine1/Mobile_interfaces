@@ -84,18 +84,22 @@
 					<!-- used to enter in a date requested to play-->
 						<h3 align="center">Date of show</h3>
 						<label for="startdate">Please enter the date you would like to play: </label>	
-						<input type="date" id="startdate" name="startdate"
-						class="required date"/>
+						<input type="date" id="startdate" name="startdate"/>
 				</div>				
 				
 				<!--genre of choice fields-->
-				<div data-role="fieldcontain">
-  					<label for="groups" class="select">Shipping method:</label>
+				<div data-role="fieldcontain" class="required">
+  					<label for="groups" class="select">Genre of music:</label>
   					<select name="groups" id="groups">
-      					<option value="standard">Standard: 7 day</option>
-      					<option value="rush">Rush: 3 days</option>
-    					<option value="express">Express: next day</option>
-      					<option value="overnight">Overnight</option>
+  						<option value="select">Select a Genre</option>
+      					<option value="classical">Classical</option>
+      					<option value="country">Country</option>
+      					<option value="jazz">Jazz</option>
+      					<option value="kids">Kids</option>
+      					<option value="metal">Metal</option>
+      					<option value="rap">Rap</option>
+      					<option value="rock">Rock</option>
+      					<option value="other">Other</option>
    					</select>
 				</div><!--genre of choice /div-->
 				
@@ -145,7 +149,7 @@
 					<!--Currently my display info button is not displaying correctly-->
 					<!--<input type="dispInfo" value="Display Info" id="dispInfo" data-theme="c"/>-->
 					
-					<a href='#' id='submit'>Submit Data</a>
+					<!--<a href='#' id='submit'>Submit Data</a>-->
 					<!--<a href='#' id="reset">Reset Data</a>-->
 					<!--<a href='#' id='dispInfo'>Display Data</a>-->
 					

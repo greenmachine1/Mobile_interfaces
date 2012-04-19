@@ -1,8 +1,20 @@
+var parseMyInfo = function(data){
+
+	console.log(data);
+};
+
+
 $(document).ready(function(){
 
 	var rbform = $('#bandInfo')
 
-	rbform.validate();
+	rbform.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler: function(){
+			var data = rbform.serializeArray();
+			parseMyInfo(data);
+		}
+	});
 });
 
 // this is the main java script file for the web-app
