@@ -1,11 +1,11 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 
 	var rbform = $('#bandInfo')
 
 	rbform.validate();
 
 
-});
+}); */
 
 // this is the main java script file for the web-app
 // Author: Cory Green
