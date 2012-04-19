@@ -30,11 +30,14 @@
 			<!--attempting to add internal page, this one will be called #additem-->
 			<li><a href="#additem">Add your bands info here</a>
 				<p> &nbsp; &nbsp; &nbsp;FILL OUT YOUR BANDS INFO HERE!</p></li>
-			<li><a href="localBands.html">Search for bands in your area</a>
+			<!--adding localbands internal page-->	
+			<li><a href="#localBands">Search for bands in your area</a>
 				<p> &nbsp; &nbsp; &nbsp;SEARCH FOR BANDS HERE!</p></li>	
-			<li><a href="bookies.html">Venues sign in here</a>
+			<!--adding my bookies internal page-->	
+			<li><a href="#bookies">Venues sign in here</a>
 				<p> &nbsp; &nbsp; &nbsp;VENUES SIGN IN HERE!</p></li>
-			<li><a href="news.html">Check out the local feed</a>
+			<!--added my news internal page-->	
+			<li><a href="#news">Check out the local feed</a>
 				<p> &nbsp; &nbsp; &nbsp;YOUR LOCAL FEED!</p></li>
 		</div><!--listview div-->
 
@@ -44,14 +47,13 @@
 					<!-- again adding link to internal page, if this doesnt work as planned-->
 					<!-- use additem.html rel="external"-->
 					<li><a href="#additem" data-icon="plus">Create</a></li>
-					<li><a href="localBands.html" data-icon="search">Local</a></li>
-					<li><a href="bookies.html" data-icon="gear">Bookies</a></li>
-					<li><a href="news.html" data-icon="gear">Feed</a></li>
+					<li><a href="#localBands" data-icon="search">Local</a></li>
+					<li><a href="#bookies" data-icon="gear">Bookies</a></li>
+					<li><a href="#news" data-icon="gear">Feed</a></li>
 				</ul>	
 			</div><!--navbar-->
 		</div><!--footer-->
 	</div><!--index ending div-->
-	
 	
 	
 	<!--start of additem page-->
@@ -78,7 +80,7 @@
 				</div>
 				<div data-role="fieldcontain">
 					<!-- used to enter in a date requested to play-->
-						<legend>Date of show</legend>
+						<h3 align="center">Date of show</h3>
 						<label for="startdate">Please enter the date you would like to play: </label>	
 						<input type="date" min="2012-02-31" max="2012-12-31" id="startdate" name="startdate"
 						required area-required="true" placeholder="2012-05-18"/>
@@ -108,12 +110,12 @@
 						<input type="checkbox" value="other" name="other" id="other"/>
 						<label for="other">Other</label>
 					</fieldset>
-				</div><!--div for checkboxes-->
 				
-				<div data-role="fieldcontain">
+					<!-- didnt want the other text field to be completely seperate from the checkboxes--
+					<!-- so there is no divider between them-->
 					<label for="other1">If you answered other, please tell us what other equipment you are bringing.</label>
    					<input type="text" name="other1" id="basic" value="Here"/>
-				</div><!--div for other container-->
+				</div><!--div for checkboxes-->
 				
 				<div data-role="fieldcontain" data-theme="b">
 				
@@ -135,7 +137,8 @@
 				</div><!--div for my submit, display, and reset buttons-->
 				<div>	
 					<a href="#home" id="home">Go back home</a>
-					<a href="index.html" id="addNew" style="display:none";" rel="external">Add new Item</a>
+					<!--might have to change this at some point-->
+					<a href="#home" id="addNew" style="display:none";" rel="external">Add new Item</a>
 				</div>
 			</form>
 		</div>		
@@ -143,14 +146,137 @@
 			<div data-role="footer" data-position="fixed" data-theme="a">
 					<div data-role="navbar">
 						<ul>
-							<li><a href="additem.html" rel="external" data-icon="plus">Create</a></li>
-							<li><a href="localBands.html" rel="external" data-icon="search">Local</a></li>
-							<li><a href="bookies.html" rel="external" data-icon="gear">Bookies</a></li>
-							<li><a href="news.html" rel="external" data-icon="gear">Feed</a></li>
+							<li><a href="#additem" data-icon="plus">Create</a></li>
+							<li><a href="#localBands" data-icon="search">Local</a></li>
+							<li><a href="#bookies" data-icon="gear">Bookies</a></li>
+							<li><a href="#news" data-icon="gear">Feed</a></li>
 						</ul>	
 					</div><!--navbar-->
 			</div><!--footer-->
 	</div><!--additem /div-->
+	
+	
+	<div data-role="page" id="localBands" data-theme="c">
+		<!-- my header div -->
+		<div data-role="header">
+			<a href="#home" data-role="button" data-theme="b">Home</a>
+		<p><h3 align="center">Search for Bands!</h3></p>
+		</div><!--Search for bands header div-->
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-filter-palceholder="Search by Genre">
+				<li><a href="#"><img src='pics/classical.png'/>Classical</a></li>
+				<li><a href="#"><img src='pics/country.png'/>Country</a></li>
+				<li><a href="#"><img src='pics/jazz.png'/>Jazz</a></li>
+				<li><a href="#"><img src='pics/kids.png'/>Kids</a></li>
+				<li><a href="#"><img src='pics/metal.png'/>Metal</a></li>
+				<li><a href="#"><img src='pics/other.png'/>Other</a></li>
+				<li><a href="#"><img src='pics/rap.png'/>Rap</a></li>
+				<li><a href="#"><img src='pics/rock.png'/>Rock</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#additem" data-icon="plus">Create</a></li>
+					<li><a href="#localBands" data-icon="search">Local</a></li>
+					<li><a href="#bookies" data-icon="gear">Bookies</a></li>
+					<li><a href="#news" data-icon="gear">Feed</a></li>
+				</ul>	
+			</div><!--navbar-->
+		</div><!--footer-->
+	</div><!--localbands /div-->
+	
+	<div data-role="page" id="bookies" data-theme="b">
+		<!-- my header div -->
+		<div data-role="header">
+			<a href="#home" data-role="button" data-theme="b">Home</a>
+			<h1>Coming soon!</h1>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#additem" data-icon="plus">Create</a></li>
+					<li><a href="#localBands" data-icon="search">Local</a></li>
+					<li><a href="#bookies" data-icon="gear">Bookies</a></li>
+					<li><a href="#news" data-icon="gear">Feed</a></li>
+				</ul>	
+			</div><!--navbar-->
+		</div><!--footer-->
+	</div><!-- closing div for bookies-->
+	
+	<div data-role="page" id="news" data-theme="b">
+		<!-- my footer div -->
+		<div data-role="header">
+			<a href="#home" data-role="button" data-theme="b">Home</a>
+			<p align="center"<h1>Local Feed</h1></p>
+		</div><!--Search for Feed header div-->
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li>
+					<h3>Dream Theater coming to Modesto,Ca!</h3>
+					<p>Tikets $23</p>
+					<p>December 23rd, 2012</p>
+				</li>
+				<li>
+					<h3>Dardanelle Headlining OzzFest!</h3>
+					<p>Tickets $35</p>
+					<p>December 1st, 2012</p>
+				</li>
+				<li>
+					<h3>Metallica's new album due October!</h3>
+					<p>On sale for $19.95</p>
+					<p>November 12th, 2012</p>
+				</li>
+				<li>
+					<h3>Modesto Fat Cat news!</h3>
+					<p>Announces new bands to play XFest</p>
+					<p>November 6th, 2012</p>
+				</li>
+				<li>
+					<h3>Dardanelle heading to the Whiskey!</h3>
+					<p>Playing in LA</p>
+					<p>October 20th, 2012</p>
+				</li>
+				<li>
+					<h3>Dream Theater news!</h3>
+					<p>Announces new keyboardist</p>
+					<p>October 6th, 2012</p>
+				</li>
+				<li>
+					<h3>Dream Theater's John Petrucci!</h3>
+					<p>Announces new guitar line</p>
+					<p>October 4th, 2012</p>
+				</li>
+				<li>
+					<h3>Dardanelle Lead guitarist!</h3>
+					<p>Announces partnership with John Petrucci</p>
+					<p>October 2nd, 2012</p>
+				</li>
+				<li>
+					<h3>August Burns Red with Dardanelle</h3>
+					<p>New Tour announcement</p>
+					<p>October 1th, 2012</p>
+				</li>
+			</ul>
+		</div><!--UL list-->
+		
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#additem" data-icon="plus">Create</a></li>
+					<li><a href="#localBands" data-icon="search">Local</a></li>
+					<li><a href="#bookies" data-icon="gear">Bookies</a></li>
+					<li><a href="#news" data-icon="gear">Feed</a></li>
+				</ul>	
+			</div><!--navbar-->
+		</div><!--footer-->
+	</div><!--closing div for my news page-->
+	
+	
+	
+	
+	
 		<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
