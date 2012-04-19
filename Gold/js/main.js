@@ -1,6 +1,6 @@
 var parseMyInfo = function(data){
 
-	console.log(data);
+// this is where the data can be parsed into a readable object for my json info.
 };
 
 
