@@ -1,3 +1,8 @@
+/*
+	Could not implement my json data, for some reason it was just not working.  With time
+	Ill get it though. :D
+
+*/
 var parseMyInfo = function(data){
 
 // this is where the data can be parsed into a readable object for my json info.
@@ -11,8 +16,9 @@ var parseMyInfo = function(data){
 /*
 (function(storage)
 {
+	// need a unique key
 	var appName = "gig.bag";
-	// need a nice unique thing to look for
+	
 	var canaryKey = appName + ".installed";
 	
 	// If this key exsists then we can bail out, as we already have initialized
