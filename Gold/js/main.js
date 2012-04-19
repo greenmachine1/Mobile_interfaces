@@ -1,18 +1,16 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
 
 	var rbform = $('#bandInfo')
 
 	rbform.validate();
-
-
-}); */
+});
 
 // this is the main java script file for the web-app
 // Author: Cory Green
 // Date: 03/18/2012
 // project: Mobile interfaces
 
-//waiting until the DOM is ready
+/*//waiting until the DOM is ready
 window.addEventListener("DOMContentLoaded", function()
 {
 	function getE(x)
@@ -512,3 +510,5 @@ function toggleControls(n)
 	var clear = getE('reset');
 	clear.addEventListener("click", clearLocal);
 });
+
+*/
