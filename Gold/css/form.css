@@ -2,5 +2,8 @@
 	by: Cory Green
 	for: CSS selectors
 */
+h3{
+	color:white;
+}
 
 label.error{display:block; margin:10px 0; color: yellow;}
