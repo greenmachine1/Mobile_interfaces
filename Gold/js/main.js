@@ -25,19 +25,66 @@ window.addEventListener("DOMContentLoaded", function()
 		var email = (getE('email').value);
 		var groups = (getE('groups').value);
 		
-		var checkbox1, checkbox2, checkbox3, checkbox4, checkbox5,
-			checkbox6, checkbox7, checkbox8, checkbox9;
+		var checkbox1 = 'no';
+		var checkbox2 = 'no';
+		var checkbox3 = 'no';
+		var checkbox4 = 'no';
+		var checkbox5 = 'no';
+		var	checkbox6 = 'no';
+		var checkbox7 = 'no';
+		var checkbox8 = 'no';
+		var checkbox9 = 'no';
 		
 		
-		// dirty way of doing checkbox input but it works.
-		for(var i = 1; i < 10; i++)
-		{
-			if ('inst'+i.checked === true){
-				('checkbox'+i) == 'yes';
+			// dirty way of doing checkbox input but it works.
+		
+			if (getE('inst1').checked){
+				(checkbox1) = 'yes';
 			}else{
-				('checkbox'+i) == 'no';
+				(checkbox1) = 'no';
+			}
+		
+			if (getE('inst2').checked){
+				(checkbox2) = 'yes';
+			}else{
+				(checkbox2) = 'no';
 			}	
-		}
+			if (getE('inst3').checked){
+				(checkbox3) = 'yes';
+			}else{
+				(checkbox3) = 'no';
+			}	
+			if (getE('inst4').checked){
+				(checkbox4) = 'yes';
+			}else{
+				(checkbox4) = 'no';
+			}	
+			if (getE('inst5').checked){
+				(checkbox5) = 'yes';
+			}else{
+				(checkbox5) = 'no';
+			}	
+			if (getE('inst6').checked){
+				(checkbox6) = 'yes';
+			}else{
+				(checkbox6) = 'no';
+			}	
+			if (getE('inst7').checked){
+				(checkbox7) = 'yes';
+			}else{
+				(checkbox7) = 'no';
+			}	
+			if (getE('inst8').checked){
+				(checkbox8) = 'yes';
+			}else{
+				(checkbox8) = 'no';
+			}	
+			if (getE('inst9').checked){
+				(checkbox9) = 'yes';
+			}else{
+				(checkbox9) = 'no';
+			}		
+		
 			
 		
 		
