@@ -43,7 +43,6 @@ window.addEventListener("DOMContentLoaded", function()
 			}else{
 				(checkbox1) = 'no';
 			}
-		
 			if (getE('inst2').checked){
 				(checkbox2) = 'yes';
 			}else{
