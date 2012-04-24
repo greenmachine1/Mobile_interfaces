@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function()
 		return theElement;
 	}
 
-	//create select field elements and populate with elements
+/*	//create select field elements and populate with elements
 	function makeCatagory()
 	{
 		var formTag = document.getElementsByTagName("form"),
@@ -30,10 +30,10 @@ window.addEventListener("DOMContentLoaded", function()
 		}
 		selectLi.appendChild(makeSelect);
 		
-	}
+	} */
 	// variable defaults
-	var bandType = ["--choose a genre--","rock", "metal", "country", "classical", "rap", 
-					"kids", "jazz", "other"];
+//	var bandType = ["--choose a genre--","rock", "metal", "country", "classical", "rap", 
+//					"kids", "jazz", "other"];
 	
 												
 	var	instrument1Value = "no",
@@ -46,80 +46,80 @@ window.addEventListener("DOMContentLoaded", function()
 		instrument8Value = "no",
 		instrument9Value = "no"; 
 		
-	var errMsg = getE('errors');	
+//	var errMsg = getE('errors');	
 		
 
 
 // find value of selected buttons
 function getCheckBoxValue()
 {
-	if(getE('guitar1').checked)
+	if(getE('inst1').checked)
 	{
-		instrument1Value = getE('guitar1').value;
+		instrument1Value = getE('inst1').value;
 	}
 	else
 	{
 		instrument1Value = "No";
 	}
-	if(getE('guitar2').checked)
+	if(getE('inst2').checked)
 	{
-		instrument2Value = getE('guitar2').value;
+		instrument2Value = getE('inst2').value;
 	}
 	else
 	{
 		instrument2Value = "No";
 	}
-	if(getE('bass').checked)
+	if(getE('inst3').checked)
 	{
-		instrument3Value = getE('bass').value;
+		instrument3Value = getE('inst3').value;
 	}
 	else
 	{
 		instrument3Value = "No";
 	}
-	if(getE('drums').checked)
+	if(getE('inst4').checked)
 	{
-		instrument4Value = getE('drums').value;
+		instrument4Value = getE('inst4').value;
 	}
 	else
 	{
 		instrument4Value = "No";
 	}
-	if(getE('vocalMain').checked)
+	if(getE('inst5').checked)
 	{
-		instrument5Value = getE('vocalMain').value;
+		instrument5Value = getE('inst5').value;
 	}
 	else
 	{
 		instrument5Value = "No";
 	}
-	if(getE('backupVocals1').checked)
+	if(getE('inst6').checked)
 	{
-		instrument6Value = getE('backupVocals1').value;
+		instrument6Value = getE('inst6').value;
 	}
 	else
 	{
 		instrument6Value = "No";
 	}
-	if(getE('backupVocals2').checked)
+	if(getE('inst7').checked)
 	{
-		instrument7Value = getE('backupVocals2').value;
+		instrument7Value = getE('inst7').value;
 	}
 	else
 	{
 		instrument7Value = "No";
 	}
-	if(getE('backupVocals3').checked)
+	if(getE('inst8').checked)
 	{
-		instrument8Value = getE('backupVocals3').value;
+		instrument8Value = getE('inst8').value;
 	}
 	else
 	{
 		instrument8Value = "No";
 	}
-	if(getE('other').checked)
+	if(getE('inst9').checked)
 	{
-		instrument9Value = getE('other').value;
+		instrument9Value = getE('inst9').value;
 	}
 	else
 	{
@@ -135,13 +135,13 @@ function toggleControls(n)
 		case "on":
 			getE('bandInfo').style.display = "none";
 			getE('reset').style.display = "inline";
-			getE('dispInfo').style.display = "none";
+			getE('disp').style.display = "none";
 			getE('addNew').style.display = "inline";
 			break;
 		case "off":
 			getE('bandInfo').style.display = "block";
 			getE('reset').style.display = "inline";
-			getE('dispInfo').style.display = "inline";
+			getE('disp').style.display = "inline";
 			getE('addNew').style.display = "inline";
 			getE('item').style.display = "inline";
 			break;
@@ -492,7 +492,7 @@ function toggleControls(n)
 	// set link and submit click events
 	
 	// shows data function
-	var dispInfo = getE('dispInfo');
+	var dispInfo = getE('disp');
 	dispInfo.addEventListener("click", getData);
 	
 	// set submit click events
