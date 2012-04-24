@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function()
 		instrument8Value = "no",
 		instrument9Value = "no"; 
 		
-//	var errMsg = getE('errors');	
+	var errMsg = getE('errors');	
 		
 
 
@@ -172,7 +172,7 @@ function toggleControls(n)
 			item.bname 			= ["Band Name:", getE('bname').value];
 			item.email			= ["Email Address:", getE('email').value];
 			item.groups 		= ["Genre:", getE('groups').value];
-			item.startdate		= ["Date Requesting: ", getE('startdate').value];
+		//	item.startdate		= ["Date Requesting: ", getE('startdate').value];
 			item.instrument1	= ["1 guitar", instrument1Value];
 			item.instrument2	= ["2 guitars", instrument2Value];
 			item.instrument3	= ["bass", instrument3Value];
@@ -183,8 +183,8 @@ function toggleControls(n)
 			item.instrument8	= ["3 backup vocals", instrument8Value];
 			item.instrument9	= ["Other Instrument(s)", instrument9Value];
 		
-			item.other1			= ["Other Info:", getE('other1').value];
-			item.tickets		= ["Tickets Wanted", getE('tickets').value];
+		//	item.other1			= ["Other Info:", getE('other1').value];
+		//	item.tickets		= ["Tickets Wanted", getE('tickets').value];
 		// save data into local storage: using stringify to convert our object to a string
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("info saved!");
@@ -294,78 +294,78 @@ function toggleControls(n)
 		getE('email').value = item.email[1];
 		getE('groups').value = item.groups[1];
 		getE('startdate').value = item.startdate[1];
-			if(getE('guitar1').checked)
-			{
-				instrument1Value = getE('guitar1').value;
-			}
-			else
-			{
-				instrument1Value = "No";
-			}
-			if(getE('guitar2').checked)
-			{
-				instrument2Value = getE('guitar2').value;
-			}
-			else
-			{
-				instrument2Value = "No";
-			}	
-			if(getE('bass').checked)
-			{
-				instrument3Value = getE('bass').value;
-			}
-			else
-			{
-				instrument3Value = "No";
-			}
-			if(getE('drums').checked)
-			{
-				instrument4Value = getE('drums').value;
-			}
-			else
-			{
-				instrument4Value = "No";
-			}
-			if(getE('vocalMain').checked)
-			{
-				instrument5Value = getE('vocalMain').value;
-			}
-			else
-			{
-				instrument5Value = "No";
-			}
-			if(getE('backupVocals1').checked)
-			{
-				instrument6Value = getE('backupVocals1').value;
-			}
-			else
-			{
-				instrument6Value = "No";
-			}
-			if(getE('backupVocals2').checked)
-			{
-				instrument7Value = getE('backupVocals2').value;
-			}
-			else
-			{
-				instrument7Value = "No";
-			}
-			if(getE('backupVocals3').checked)
-			{
-				instrument8Value = getE('backupVocals3').value;
-			}
-			else
-			{
-				instrument8Value = "No";
-			}
-			if(getE('other').checked)
-			{
-				instrument9Value = getE('other').value;
-			}
-			else
-			{
-				instrument9Value = "No";
-			} 	
+			if(getE('inst1').checked)
+	{
+		instrument1Value = getE('inst1').value;
+	}
+	else
+	{
+		instrument1Value = "No";
+	}
+	if(getE('inst2').checked)
+	{
+		instrument2Value = getE('inst2').value;
+	}
+	else
+	{
+		instrument2Value = "No";
+	}
+	if(getE('inst3').checked)
+	{
+		instrument3Value = getE('inst3').value;
+	}
+	else
+	{
+		instrument3Value = "No";
+	}
+	if(getE('inst4').checked)
+	{
+		instrument4Value = getE('inst4').value;
+	}
+	else
+	{
+		instrument4Value = "No";
+	}
+	if(getE('inst5').checked)
+	{
+		instrument5Value = getE('inst5').value;
+	}
+	else
+	{
+		instrument5Value = "No";
+	}
+	if(getE('inst6').checked)
+	{
+		instrument6Value = getE('inst6').value;
+	}
+	else
+	{
+		instrument6Value = "No";
+	}
+	if(getE('inst7').checked)
+	{
+		instrument7Value = getE('inst7').value;
+	}
+	else
+	{
+		instrument7Value = "No";
+	}
+	if(getE('inst8').checked)
+	{
+		instrument8Value = getE('inst8').value;
+	}
+	else
+	{
+		instrument8Value = "No";
+	}
+	if(getE('inst9').checked)
+	{
+		instrument9Value = getE('inst9').value;
+	}
+	else
+	{
+		instrument9Value = "No";
+	} 	
 		
 		getE('other1').value = item.other1[1];
 		getE('tickets').value = item.tickets[1];
@@ -487,7 +487,7 @@ function toggleControls(n)
 	}
 	
 	// calling on the makeCatagory function
-	makeCatagory();
+	//makeCatagory();
 	
 	// set link and submit click events
 	
