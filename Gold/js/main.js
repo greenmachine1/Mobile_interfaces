@@ -1,3 +1,4 @@
+
 // this is the main java script file for the web-app
 // Author: Cory Green
 // Date: 03/18/2012
@@ -12,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function()
 		return theElement;
 	}
 
-/*	//create select field elements and populate with elements
+	//create select field elements and populate with elements
 	function makeCatagory()
 	{
 		var formTag = document.getElementsByTagName("form"),
@@ -29,10 +30,10 @@ window.addEventListener("DOMContentLoaded", function()
 		}
 		selectLi.appendChild(makeSelect);
 		
-	} */
+	}
 	// variable defaults
-//	var bandType = ["--choose a genre--","rock", "metal", "country", "classical", "rap", 
-//					"kids", "jazz", "other"];
+	var bandType = ["--choose a genre--","rock", "metal", "country", "classical", "rap", 
+					"kids", "jazz", "other"];
 	
 												
 	var	instrument1Value = "no",
@@ -52,73 +53,73 @@ window.addEventListener("DOMContentLoaded", function()
 // find value of selected buttons
 function getCheckBoxValue()
 {
-	if(getE('inst1').checked)
+	if(getE('guitar1').checked)
 	{
-		instrument1Value = getE('inst1').value;
+		instrument1Value = getE('guitar1').value;
 	}
 	else
 	{
 		instrument1Value = "No";
 	}
-	if(getE('inst2').checked)
+	if(getE('guitar2').checked)
 	{
-		instrument2Value = getE('inst2').value;
+		instrument2Value = getE('guitar2').value;
 	}
 	else
 	{
 		instrument2Value = "No";
 	}
-	if(getE('inst3').checked)
+	if(getE('bass').checked)
 	{
-		instrument3Value = getE('inst3').value;
+		instrument3Value = getE('bass').value;
 	}
 	else
 	{
 		instrument3Value = "No";
 	}
-	if(getE('inst4').checked)
+	if(getE('drums').checked)
 	{
-		instrument4Value = getE('inst4').value;
+		instrument4Value = getE('drums').value;
 	}
 	else
 	{
 		instrument4Value = "No";
 	}
-	if(getE('inst5').checked)
+	if(getE('vocalMain').checked)
 	{
-		instrument5Value = getE('inst5').value;
+		instrument5Value = getE('vocalMain').value;
 	}
 	else
 	{
 		instrument5Value = "No";
 	}
-	if(getE('inst6').checked)
+	if(getE('backupVocals1').checked)
 	{
-		instrument6Value = getE('inst6').value;
+		instrument6Value = getE('backupVocals1').value;
 	}
 	else
 	{
 		instrument6Value = "No";
 	}
-	if(getE('inst7').checked)
+	if(getE('backupVocals2').checked)
 	{
-		instrument7Value = getE('inst7').value;
+		instrument7Value = getE('backupVocals2').value;
 	}
 	else
 	{
 		instrument7Value = "No";
 	}
-	if(getE('inst8').checked)
+	if(getE('backupVocals3').checked)
 	{
-		instrument8Value = getE('inst8').value;
+		instrument8Value = getE('backupVocals3').value;
 	}
 	else
 	{
 		instrument8Value = "No";
 	}
-	if(getE('inst9').checked)
+	if(getE('other').checked)
 	{
-		instrument9Value = getE('inst9').value;
+		instrument9Value = getE('other').value;
 	}
 	else
 	{
@@ -134,13 +135,13 @@ function toggleControls(n)
 		case "on":
 			getE('bandInfo').style.display = "none";
 			getE('reset').style.display = "inline";
-			getE('disp').style.display = "none";
+			getE('dispInfo').style.display = "none";
 			getE('addNew').style.display = "inline";
 			break;
 		case "off":
 			getE('bandInfo').style.display = "block";
 			getE('reset').style.display = "inline";
-			getE('disp').style.display = "inline";
+			getE('dispInfo').style.display = "inline";
 			getE('addNew').style.display = "inline";
 			getE('item').style.display = "inline";
 			break;
@@ -293,78 +294,79 @@ function toggleControls(n)
 		getE('email').value = item.email[1];
 		getE('groups').value = item.groups[1];
 		getE('startdate').value = item.startdate[1];
-		if(getE('inst1').checked)
-		{
-			instrument1Value = getE('inst1').value;
-		}
-		else
-		{
-			instrument1Value = "No";
-		}
-		if(getE('inst2').checked)
-		{
-			instrument2Value = getE('inst2').value;
-		}
-		else
-		{
-			instrument2Value = "No";
-		}
-		if(getE('inst3').checked)
-		{
-			instrument3Value = getE('inst3').value;
-		}
-		else
-		{
-			instrument3Value = "No";
-		}
-		if(getE('inst4').checked)
-		{
-			instrument4Value = getE('inst4').value;
-		}
-		else
-		{
-			instrument4Value = "No";
-		}
-		if(getE('inst5').checked)
-		{
-			instrument5Value = getE('inst5').value;
-		}
-		else
-		{
-			instrument5Value = "No";
-		}
-		if(getE('inst6').checked)
-		{
-			instrument6Value = getE('inst6').value;
-		}
-		else
-		{
-			instrument6Value = "No";
-		}
-		if(getE('inst7').checked)
-		{
-			instrument7Value = getE('inst7').value;
-		}
-		else
-		{
-			instrument7Value = "No";
-		}
-		if(getE('inst8').checked)
-		{
-			instrument8Value = getE('inst8').value;
-		}
-		else
-		{
-			instrument8Value = "No";
-		}
-		if(getE('inst9').checked)
-		{
-			instrument9Value = getE('inst9').value;
-		}
-		else
-		{
-			instrument9Value = "No";
-		} 
+			if(getE('guitar1').checked)
+			{
+				instrument1Value = getE('guitar1').value;
+			}
+			else
+			{
+				instrument1Value = "No";
+			}
+			if(getE('guitar2').checked)
+			{
+				instrument2Value = getE('guitar2').value;
+			}
+			else
+			{
+				instrument2Value = "No";
+			}	
+			if(getE('bass').checked)
+			{
+				instrument3Value = getE('bass').value;
+			}
+			else
+			{
+				instrument3Value = "No";
+			}
+			if(getE('drums').checked)
+			{
+				instrument4Value = getE('drums').value;
+			}
+			else
+			{
+				instrument4Value = "No";
+			}
+			if(getE('vocalMain').checked)
+			{
+				instrument5Value = getE('vocalMain').value;
+			}
+			else
+			{
+				instrument5Value = "No";
+			}
+			if(getE('backupVocals1').checked)
+			{
+				instrument6Value = getE('backupVocals1').value;
+			}
+			else
+			{
+				instrument6Value = "No";
+			}
+			if(getE('backupVocals2').checked)
+			{
+				instrument7Value = getE('backupVocals2').value;
+			}
+			else
+			{
+				instrument7Value = "No";
+			}
+			if(getE('backupVocals3').checked)
+			{
+				instrument8Value = getE('backupVocals3').value;
+			}
+			else
+			{
+				instrument8Value = "No";
+			}
+			if(getE('other').checked)
+			{
+				instrument9Value = getE('other').value;
+			}
+			else
+			{
+				instrument9Value = "No";
+			} 	
+		
 		getE('other1').value = item.other1[1];
 		getE('tickets').value = item.tickets[1];
 		
@@ -410,7 +412,7 @@ function toggleControls(n)
 		}
 	}
 	
-/*	function validate(e)
+	function validate(e)
 	{
 		// define the elements we want to check
 		var getfname = getE('fname');
@@ -482,23 +484,25 @@ function toggleControls(n)
 			// remember this key value was passed through the edit submit listener as a property
 			storeData(this.key);
 		}
-	} */
+	}
 	
 	// calling on the makeCatagory function
-	//makeCatagory();
+	makeCatagory();
 	
 	// set link and submit click events
 	
 	// shows data function
-	var dispInfo = getE('disp');
+	var dispInfo = getE('dispInfo');
 	dispInfo.addEventListener("click", getData);
 	
 	// set submit click events
 	var submit = getE('submit');
-	submit.addEventListener("click"); // should also include , validate);
+	submit.addEventListener("click", validate);
 	
 	
 	// clear function
 	var clear = getE('reset');
 	clear.addEventListener("click", clearLocal);
 });
+
+
