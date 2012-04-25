@@ -3,7 +3,13 @@
 	for: CSS selectors
 */
 h3{
-	color:white;
+	color:black;
 }
 
 label.error{display:block; margin:10px 0; color: yellow;}
+
+/*.ui-page{background: green;}  setting the background color to green  */
+
+.ui-page {
+	background: transparent url(pics/crowd1.png) no-repeat center;
+}
