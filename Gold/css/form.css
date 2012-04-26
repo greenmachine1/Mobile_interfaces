@@ -11,3 +11,11 @@ label.error{display:block; margin:10px 0; color: yellow;}
 
 /* my main page gradient color - blue */
 .ui-page {background: -webkit-gradient(linear, left top, left bottom, from(#2799F2), to(#054096));} 
+
+.ui-btn {
+		color: white;
+		}
+
+.ui-listview, .ui-li {
+		color:white;
+		}
