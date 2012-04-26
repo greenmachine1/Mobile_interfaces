@@ -9,7 +9,7 @@ h3{
 label.error{display:block; margin:10px 0; color: yellow;}
 
 
-/* my main page gradient color - blue */
+
 .ui-page {
 		background: -webkit-gradient(linear, left top, left bottom, from(#2799F2), to(#054096));
 		} 
@@ -41,4 +41,8 @@ label.error{display:block; margin:10px 0; color: yellow;}
 
 input.ui-input-text, textarea.ui-input-text {
 		background-image:none;
+}
+
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search {
+	background-color:#3DA4EA;
 }
