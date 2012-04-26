@@ -8,13 +8,9 @@ h3{
 
 label.error{display:block; margin:10px 0; color: yellow;}
 
-/*.ui-page{background: green;}  setting the background color to green  */
 
-.ui-page {
-	background: green;
+
+<!--this actually works to place an images the background-->
+.ui-page{
+	background: url(pics/crowd.jpg);	
 }
-
-.ui-page.additem{
-	background: green;
-}
-
