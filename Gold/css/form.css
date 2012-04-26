@@ -22,3 +22,17 @@ label.error{display:block; margin:10px 0; color: yellow;}
 		color:white;
 		padding: 5px;
 		}
+		
+.ui-navbar .ui-btn-inner {
+		color:#2799F2;
+}		
+
+
+.ui-body-b{
+		background:blue;
+}
+
+.ui-body-b, .ui-dialog.ui-overlay-b{
+		color:white;
+		border: 10px solid black;
+}

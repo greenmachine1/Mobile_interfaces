@@ -7,6 +7,9 @@
 //waiting until the DOM is ready
 window.addEventListener("DOMContentLoaded", function()
 {
+
+
+
 	function getE(x)
 	{
 		var theElement = document.getElementById(x);
