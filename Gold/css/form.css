@@ -3,14 +3,8 @@
 	for: CSS selectors
 */
 h3{
-	color:black;
+	color:white;
 }
 
 label.error{display:block; margin:10px 0; color: yellow;}
 
-
-
-<!--this actually works to place an images the background-->
-.ui-page{
-	background: url(pics/crowd.jpg);	
-}

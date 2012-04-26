@@ -16,17 +16,15 @@
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/modernizr.custom.min.js"></script>
 </head>
-<style type="text/css">
-
-<!--this actually works to place an images the background-->
-.ui-page{
-	background-image: url(pics/crowd.jpg);	
-}
+<!--this actually works to target certain elements in the page.-->
+<style>
+	.ui-page {background:blue;}
+	.ui-page fieldset {background:blue;} 
 </style>
 
 <body>
 	<!-- My Page div -->
-	<div data-role="page" id="home"><!--making a background color-->
+	<div data-role="page" id="home">
 	
 		<div>
 			<img src="pics/crowd1.png" width="100%" height="180px">
@@ -47,7 +45,7 @@
 				<p> &nbsp; &nbsp; &nbsp;YOUR LOCAL FEED!</p></li>
 		</div><!--listview div-->
 
-		<div data-role="footer" data-position="fixed" data-theme="a">
+		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
 					<!-- again adding link to internal page, if this doesnt work as planned-->
