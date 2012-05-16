@@ -7,9 +7,6 @@
 //waiting until the DOM is ready
 window.addEventListener("DOMContentLoaded", function()
 {
-
-
-
 	function getE(x)
 	{
 		var theElement = document.getElementById(x);
@@ -51,8 +48,6 @@ window.addEventListener("DOMContentLoaded", function()
 		
 	var errMsg = getE('errors');	
 		
-
-
 // find value of selected buttons
 function getCheckBoxValue()
 {
