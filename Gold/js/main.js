@@ -293,77 +293,77 @@ function toggleControls(n)
 		getE('groups').value = item.groups[1];
 		getE('startdate').value = item.startdate[1];
 			if(getE('inst1').checked)
-	{
-		instrument1Value = getE('inst1').value;
-	}
-	else
-	{
-		instrument1Value = "No";
-	}
-	if(getE('inst2').checked)
-	{
-		instrument2Value = getE('inst2').value;
-	}
-	else
-	{
-		instrument2Value = "No";
-	}
-	if(getE('inst3').checked)
-	{
-		instrument3Value = getE('inst3').value;
-	}
-	else
-	{
-		instrument3Value = "No";
-	}
-	if(getE('inst4').checked)
-	{
-		instrument4Value = getE('inst4').value;
-	}
-	else
-	{
-		instrument4Value = "No";
-	}
-	if(getE('inst5').checked)
-	{
-		instrument5Value = getE('inst5').value;
-	}
-	else
-	{
-		instrument5Value = "No";
-	}
-	if(getE('inst6').checked)
-	{
-		instrument6Value = getE('inst6').value;
-	}
-	else
-	{
-		instrument6Value = "No";
-	}
-	if(getE('inst7').checked)
-	{
-		instrument7Value = getE('inst7').value;
-	}
-	else
-	{
-		instrument7Value = "No";
-	}
-	if(getE('inst8').checked)
-	{
-		instrument8Value = getE('inst8').value;
-	}
-	else
-	{
-		instrument8Value = "No";
-	}
-	if(getE('inst9').checked)
-	{
-		instrument9Value = getE('inst9').value;
-	}
-	else
-	{
-		instrument9Value = "No";
-	} 	
+			{
+				instrument1Value = getE('inst1').value;
+			}
+			else
+			{
+				instrument1Value = "No";
+			}
+			if(getE('inst2').checked)
+			{
+				instrument2Value = getE('inst2').value;
+			}
+			else
+			{
+				instrument2Value = "No";
+			}
+			if(getE('inst3').checked)
+			{
+				instrument3Value = getE('inst3').value;
+			}
+			else
+			{
+				instrument3Value = "No";
+			}
+			if(getE('inst4').checked)
+			{
+				instrument4Value = getE('inst4').value;
+			}
+			else
+			{
+				instrument4Value = "No";
+			}
+			if(getE('inst5').checked)
+			{
+				instrument5Value = getE('inst5').value;
+			}
+			else
+			{
+				instrument5Value = "No";
+			}
+			if(getE('inst6').checked)
+			{
+				instrument6Value = getE('inst6').value;
+			}
+			else
+			{
+				instrument6Value = "No";
+			}
+			if(getE('inst7').checked)
+			{
+				instrument7Value = getE('inst7').value;
+			}
+			else
+			{
+				instrument7Value = "No";
+			}
+			if(getE('inst8').checked)
+			{
+				instrument8Value = getE('inst8').value;
+			}
+			else
+			{
+				instrument8Value = "No";
+			}
+			if(getE('inst9').checked)
+			{
+				instrument9Value = getE('inst9').value;
+			}
+			else
+			{
+				instrument9Value = "No";
+			} 	
 		
 		getE('other1').value = item.other1[1];
 		getE('tickets').value = item.tickets[1];
