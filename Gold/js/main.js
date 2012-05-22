@@ -504,3 +504,16 @@ function toggleControls(n)
 });
 
 
+
+/*<ul data-role="listview" data-filter="true" data-filter-palceholder="Search by Genre">
+				<li><a href="#"><img src='pics/classical.png'/>Classical</a></li>
+				<li><a href="#"><img src='pics/country.png'/>Country</a></li>
+				<li><a href="#"><img src='pics/jazz.png'/>Jazz</a></li>
+				<li><a href="#"><img src='pics/kids.png'/>Kids</a></li>
+				<li><a href="#"><img src='pics/metal.png'/>Metal</a></li>
+				<li><a href="#"><img src='pics/other.png'/>Other</a></li>
+				<li><a href="#"><img src='pics/rap.png'/>Rap</a></li>
+				<li><a href="#"><img src='pics/rock.png'/>Rock</a></li>
+			</ul> */
+
+
