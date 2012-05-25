@@ -1,11 +1,30 @@
 
+// getting the face id and putting it into thisValue
+var thisValue = document.getElementById("face");
+console.log("The value is : ", thisValue);
+
+// targetting the 3rd value under the id of face and in the a href tags
+var thisValueExtended = thisValue.getElementsByTagName("a");
+
+// expanding the elements of the a values
+for (var i = 0; i < thisValueExtended.length; i++)
+{
+	console.log("The value is : ", thisValueExtended[i]);
+}
+
+
+
+
+
+
+
 // this is the main java script file for the web-app
 // Author: Cory Green
 // Date: 03/18/2012
 // project: Mobile interfaces
 
 //waiting until the DOM is ready
-window.addEventListener("DOMContentLoaded", function()
+/*window.addEventListener("DOMContentLoaded", function()
 {
 	function getE(x)
 	{
@@ -30,7 +49,7 @@ window.addEventListener("DOMContentLoaded", function()
 		}
 		selectLi.appendChild(makeSelect);
 		
-	} */
+	} 
 	// variable defaults
 //	var bandType = ["--choose a genre--","rock", "metal", "country", "classical", "rap", 
 //					"kids", "jazz", "other"];
@@ -514,6 +533,8 @@ function toggleControls(n)
 				<li><a href="#"><img src='pics/other.png'/>Other</a></li>
 				<li><a href="#"><img src='pics/rap.png'/>Rap</a></li>
 				<li><a href="#"><img src='pics/rock.png'/>Rock</a></li>
-			</ul> */
+			</ul> 
+			
+			*/
 
 
