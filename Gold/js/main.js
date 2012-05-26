@@ -12,9 +12,19 @@ for (var i = 0; i < thisValueExtended.length; i++)
 	console.log("The value is : ", thisValueExtended[i]);
 }
 
+// this works to dynamically populate the genre group!
+var bandType = ["--choose a genre--", "rock", "metal", "country", "classical", "rap", "kids", "jazz", "other"];
 
+var myElement = document.getElementById("groups");
 
-
+for(var i = 0; i < bandType.length; i++){
+	var myNewElement = document.createElement("option");
+	myElement.appendChild(myNewElement);
+	
+	var myText = document.createTextNode(bandType[i]);
+	myNewElement.appendChild(myText);
+	
+}
 
 
 
