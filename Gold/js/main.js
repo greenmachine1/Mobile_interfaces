@@ -16,7 +16,15 @@ for(var i = 0; i < bandType.length; i++)
 
 // searching for the id of bandsearch for the individual list items
 var bandSearch = document.getElementById("bandSearch");
-var getLIBand = bandSearch.getElementsByTagName("li");
+
+for (var j = 0; j < bandType.length; j++)
+{
+	var getLIBand = document.createElement("li");
+	bandSearch.appendChild(getLIBand);
+	
+	var newText = document.createTextNode(bandType[j]);
+	getLIBand.appendChild(newText);
+}
 
 console.log(getLIBand.length);
 

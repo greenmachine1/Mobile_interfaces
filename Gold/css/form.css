@@ -19,7 +19,7 @@ label.error{display:block; margin:10px 0; color: yellow;}
 		}
 
 .ui-listview, .ui-li {
-		color:white;
+		color:black;
 		padding: 5px;
 		}
 		
@@ -45,4 +45,8 @@ input.ui-input-text, textarea.ui-input-text {
 
 .ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search {
 	background-color:#3DA4EA;
+}
+
+.bandSearch{
+	text-color:black;
 }
