@@ -28,6 +28,17 @@ for (var j = 0; j < bandType.length; j++)
 
 console.log(getLIBand.length);
 
+
+
+
+
+
+
+
+
+
+
+
 // this is the main java script file for the web-app
 // Author: Cory Green
 // Date: 03/18/2012
