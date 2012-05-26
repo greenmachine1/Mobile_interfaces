@@ -1,4 +1,5 @@
 
+
 // this works to dynamically populate the genre group!
 var bandType = ["--choose a genre--", "rock", "metal", "country", "classical", "rap", "kids", "jazz", "other"];
 
@@ -15,6 +16,9 @@ for(var i = 0; i < bandType.length; i++)
 }
 
 // searching for the id of bandsearch for the individual list items
+// this works for populating the search for bands page with the 
+// static array.  Will work on getting it to work with my JSON data
+// at a later time.
 var bandSearch = document.getElementById("bandSearch");
 
 for (var j = 0; j < bandType.length; j++)
@@ -26,9 +30,11 @@ for (var j = 0; j < bandType.length; j++)
 	getLIBand.appendChild(newText);
 }
 
-console.log(getLIBand.length);
-
-
+	var parsedInfo = json.bandInfo1.bname[1];
+	
+	console.log(parsedInfo);
+	
+	
 
 
 
