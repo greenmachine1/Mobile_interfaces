@@ -1,23 +1,11 @@
 
-// getting the face id and putting it into thisValue
-var thisValue = document.getElementById("face");
-console.log("The value is : ", thisValue);
-
-// targetting the 3rd value under the id of face and in the a href tags
-var thisValueExtended = thisValue.getElementsByTagName("a");
-
-// expanding the elements of the a values
-for (var i = 0; i < thisValueExtended.length; i++)
-{
-	console.log("The value is : ", thisValueExtended[i]);
-}
-
 // this works to dynamically populate the genre group!
 var bandType = ["--choose a genre--", "rock", "metal", "country", "classical", "rap", "kids", "jazz", "other"];
 
 var myElement = document.getElementById("groups");
 
-for(var i = 0; i < bandType.length; i++){
+for(var i = 0; i < bandType.length; i++)
+{
 	var myNewElement = document.createElement("option");
 	myElement.appendChild(myNewElement);
 	
@@ -26,7 +14,11 @@ for(var i = 0; i < bandType.length; i++){
 	
 }
 
+// searching for the id of bandsearch for the individual list items
+var bandSearch = document.getElementById("bandSearch");
+var getLIBand = bandSearch.getElementsByTagName("li");
 
+console.log(getLIBand.length);
 
 // this is the main java script file for the web-app
 // Author: Cory Green

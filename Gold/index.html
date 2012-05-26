@@ -97,15 +97,7 @@
 				<div data-role="fieldcontain" class="required">
   					<label for="groups" class="select">Genre of music:</label>
   					<select name="groups" id="groups">
-  						<!--<option value="select">Select a Genre</option>-->
-      					<!--<option value="classical">Classical</option>-->
-      					<!--<option value="country">Country</option>-->
-      					<!--<option value="jazz">Jazz</option>-->
-      					<!--<option value="kids">Kids</option>-->
-      					<!--<option value="metal">Metal</option>-->
-      					<!--<option value="rap">Rap</option>-->
-      					<!--<option value="rock">Rock</option>-->
-      					<!--<option value="other">Other</option>-->
+  						<!--section is dynamically populated -->
    					</select> 
 				</div><!--genre of choice /div-->
 				
@@ -185,7 +177,7 @@
 		</div><!--Main page pic-->	
 		
 		<div data-role="content">
-			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search by Genre">
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search by Genre" id="bandSearch">
 				<li><a href="#"><img src='pics/classical.png'/>Classical</a></li>
 				<li><a href="#"><img src='pics/country.png'/>Country</a></li>
 				<li><a href="#"><img src='pics/jazz.png'/>Jazz</a></li>
