@@ -30,9 +30,17 @@ for (var j = 0; j < bandType.length; j++)
 	getLIBand.appendChild(newText);
 }
 
-	var parsedInfo = json.bandInfo1.bname[1];
-	
-	console.log(parsedInfo);
+	for(var bname in json)
+	{
+		var bandInfoArray = [bname];	
+		console.log(bandInfoArray);
+		
+		for(var i = 0; i < bandInfoArray.length; i++)
+		{
+			console.log(bname[4]);
+		}
+
+	}
 	
 	
 
