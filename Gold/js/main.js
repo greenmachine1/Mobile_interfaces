@@ -30,21 +30,17 @@ for (var j = 0; j < bandType.length; j++)
 	getLIBand.appendChild(newText);
 }
 
-	for(var bname in json)
-	{
-		var bandInfoArray = [bname];	
-		console.log(bandInfoArray);
-		
-		for(var i = 0; i < bandInfoArray.length; i++)
-		{
-			console.log(bname[4]);
-		}
+	var stringifiedJson = JSON.stringify(json);
+	console.log(stringifiedJson);
+	
+	var parsedJson = JSON.parse(stringifiedJson);
+	console.log(parsedJson);
 
-	}
+	console.log(parsedJson.bandInfo1.bname[1]);
+	console.log(parsedJson.bandInfo2.bname[1]);
+	console.log(json.bandInfo3.bname[1]);
 	
 	
-
-
 
 
 
@@ -267,7 +263,7 @@ function toggleControls(n)
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
 			// convert the string fromm local storage value back to an object by using JSON .parse
-			var obj = JSON.parse(value); // changed obj to item
+			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeli.appendChild(makeSubList);
 			getImage(obj.groups[1], makeSubList); // gets an image for our form, passes in makeSubList
